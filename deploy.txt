@@ -1,0 +1,72 @@
+https://www.koyeb.com/docs/deploy/flask
+
+https://github.com/pallets/flask
+
+https://flask.palletsprojects.com/en/3.0.x/
+
+5
+
+Answer to the question: https://flask.palletsprojects.com/_/downloads/en/1.1.x/pdf/
+
+Run the app:
+
+set FLASK_APP=newproj
+set FLASK_ENV=development
+flask run
+Firstly you should create virtualenvironment for your flask project in yor desktop.
+
+install virtualenvironment : install virtualenvironment at your terminal or dos
+
+pip install virtualenv
+
+create a new folder for your project (i show you creating folder at terminal)
+
+mkdir newproj
+
+cd newproj
+
+virtualenv venv
+
+mkdir newproj : created new folder named "newproj"
+
+cd newproj : change directory to "newproj"
+
+virtualenv venv : created virtualenvironment named "venv"
+
+and activate your venv.
+
+C:\Users\name\abc> venv\Scripts\activate
+Now, you can start install flask.
+
+pip install Flask
+If you use pycharm, open your folder in your editor. And create a new python file named hello.py (or another things). Write code below inside ypur python file.
+
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+   return 'Hello World’
+
+if __name__ == '__main__':
+   app.run()
+Open pycharm editor and if venv is deactivate, activate venv. The above given Python script is executed from Python shell.
+
+python hello.py
+Debug Mode:
+
+# app.run(debug = True)
+
+app.run(host='127.0.0.1',port=8000,debug=True)
+Summary :
+
+$ export FLASK_APP=app.py # your python file name
+$ set FLASK_APP = app.py
+$ export FLASK_ENV=development
+$ set FLASK_DEBUG = True
+$ flask run
+
+ setx FLASK_APP app.py
+$env:FLASK_APP="app.py"
+FLASK run
+
