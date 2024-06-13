@@ -70,3 +70,8 @@ $ flask run
 $env:FLASK_APP="app.py"
 FLASK run
 
+
+ setx FLASK_APP main.py
+$env:FLASK_APP="main.py"
+FLASK run
+FLASK run -h localhost -p 3000
