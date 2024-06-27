@@ -77,3 +77,10 @@ FLASK run
 $env:FLASK_APP="main.py"
 FLASK run
 FLASK run -h localhost -p 3000
+
+source ~/workspaces/tensor/tftest/bin/activate
+
+sudo apt-get install python3-dev default-libmysqlclient-dev build-essential pkg-config
+
+pip install flask_mysqldb
+flask run
